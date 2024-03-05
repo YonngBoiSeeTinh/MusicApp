@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Indexfragment">Indexfragment</string>
+    <string name="Searchfragment">Searchfragment</string>
+    <string name="Liabararyfragment">Liabararyfragment</string>
+</resources>

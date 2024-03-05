@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.LibararyFragment">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientcolor1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thư viện"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8dp"
+                android:textSize="28sp"/>
+
+            <ImageButton
+                android:id="@+id/btnSeatch"
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_icon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các bài hát đã thích"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="28sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSong2"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</FrameLayout>
